@@ -369,6 +369,9 @@ footer .bottom-footer p {
         align-items: center;
         list-style: none;
     }
+    .shop li a i{
+        color: #000;
+    }
     .desktop-menu{
         display: none;
     }
