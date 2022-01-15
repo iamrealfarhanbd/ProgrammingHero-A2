@@ -377,6 +377,10 @@ footer .bottom-footer p {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .hero-img {
+    
+        background-position: right;
+    }
     
   }
 
