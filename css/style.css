@@ -110,11 +110,19 @@ header nav h2{
     padding: 10px 24px;
 }
 .hero-img {
-    background-image: url(./images/cam-bg.png);
+    background-image: url('../images/background.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+/* Hero area animayions */
+.float { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
 
 .hero-img img {
     width: 100%;
@@ -332,6 +340,18 @@ footer .bottom-footer p {
         background-position: 0% 50%;
     }
 }
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 
 /*===============================
