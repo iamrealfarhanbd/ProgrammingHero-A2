@@ -11,28 +11,35 @@
 <body>
     <header class="container ">
         <nav>
-            <h2>Influencer products</h2>
+            <h2 class="hide-menu" >Influencer products</h2>
             <ul class="desktop-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Sign up</a></li>
-                <li><a href="#">Log In</a></li>
+                <li class="hide-menu" ><a href="#">Home</a></li>
+                <li class="hide-menu" ><a href="#">Products</a></li>
+                <li class="hide-menu" ><a href="#">Sign up</a></li>
+                <li class="hide-menu" ><a href="#">Log In</a></li>
+                <li class="hide-menu" ><a href="#"><i class="fas fa-search"></i></a></li>
+                <li class="hide-menu" ><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+               
             </ul>
-
+            <ul class="shop ">
+                <li class="hide"><a href="#"><i class="fas fa-bars" aria-hidden="true"></i></a></li>
+                <li class="hide"><h2>Influencer products</h2></li>
+                <li ><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
         </nav>
     </header>
-    <main class="container">
-        <section class="hero-area myMargin100">
+    <main >
+        <section class="hero-area myMargin50">
             <div class="hero-text">
                 <h1>Start your Journey as Influencer</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
+                <p>Welcome to a new era of marketing and service in which your brand is defined by those who experience it.</p>
                 <a href="#">Preebook now  <i class="fas fa-arrow-right"> </i></a>
             </div>
             <div class="hero-img">
                 <img src="./images/main-camera.png" alt="">
             </div>
         </section>
-        <section class="partner-area">
+        <section class="partner-area container">
             <div class="group-img">
                 <img src="./logos/Alibaba.svg" alt="">
                 <img src="./logos/Amazon.svg" alt="">
@@ -43,7 +50,7 @@
                 <img src="./logos/Walmart.svg" alt="">
             </div>
         </section>
-        <section class="Popular-Collection myMargin100">
+        <section class="Popular-Collection myMargin50 container">
             <h2 class="text-center">Popular Collection</h2>
             <div class="grid-box">
                 <div class="card-box">
@@ -190,86 +197,26 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card-box">
-                    <div class="feature-img">
-                        <img src="./images/tripod.png" alt="">
-                    </div>
-                    <div class="card-details">
-                        <h2>Flex Tripod</h2>
-                        <p>$50.48</p>
-                        <div class="review-star"> 
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span> 4.99 </span>
-                        </div>
-                        <ul>
-                            <li>Wordwide shifting </li>
-                            <li>available </li>
-                            <li>Buyers protection possible!</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-box">
-                    <div class="feature-img">
-                        <img src="./images/tripod.png" alt="">
-                    </div>
-                    <div class="card-details">
-                        <h2>Flex Tripod</h2>
-                        <p>$50.48</p>
-                        <div class="review-star"> 
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span> 4.99 </span>
-                        </div>
-                        <ul>
-                            <li>Wordwide shifting </li>
-                            <li>available </li>
-                            <li>Buyers protection possible!</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card-box">
-                    <div class="feature-img">
-                        <img src="./images/tripod.png" alt="">
-                    </div>
-                    <div class="card-details">
-                        <h2>Flex Tripod</h2>
-                        <p>$50.48</p>
-                        <div class="review-star"> 
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span> 4.99 </span>
-                        </div>
-                        <ul>
-                            <li>Wordwide shifting </li>
-                            <li>available </li>
-                            <li>Buyers protection possible!</li>
-                        </ul>
-                    </div>
-                </div>
+
                 <a href="#">See More <i class="fas fa-arrow-right"> </i></a>
+            </div>
+        </section>
+        <section class="subscription-plan ">
+        
+            <div class="form">
+                <h2>Stay With Us..!</h2>
+                <p>For more offers,please Stay With Us</p>
+                <form action="submite" method="post" id="subscription">
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email">
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="bottom-footer text-center">
             <h2>Influencer products</h2>
-            <p>Copyright © 2020  influencer products</p>
+            <p>Copyright &copy 2020  influencer products</p>
             <p>All rights reserved</p>
             <ul>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>

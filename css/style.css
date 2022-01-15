@@ -9,10 +9,11 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 /* some special custom css */
-.myMargin100{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.myMargin50 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 
 .text-center{
@@ -20,15 +21,14 @@ body{
 }
 /* giving some max with for website  */
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /* menu */
 header nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
 header nav h2{
     font-family: 'Poppins';
@@ -53,13 +53,29 @@ header nav h2{
     line-height: 24px;
     color: #3A3A3A;
 }
+.shop {
+    display: none;
+}
 
 /* hero area design */
-section.hero-area {
+.hero-area {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 120px 0;
+
+
 }
+.hero-area:hover{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+.hero-area:hover h1,.hero-area:hover p{
+    color: #ffffff;
+}
+
 .hero-text {
     max-width: 40%;
 }
@@ -79,6 +95,7 @@ section.hero-area {
     line-height: 24px;
     color: #3A3A3A;
     margin-bottom: 30px;
+    text-transform: capitalize;
 }
 .hero-text a {
     background: #E02C6D;
@@ -92,6 +109,11 @@ section.hero-area {
     text-decoration: none;
     padding: 10px 24px;
 }
+.hero-img img {
+    width: 100%;
+}
+
+
 
 /* partner area design */
 .group-img {
@@ -115,11 +137,9 @@ section.hero-area {
 }
 .grid-box {
     display: grid;
-    grid-template-columns: repeat(3, 329px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
     grid-row-gap: 30px;
-    grid-column-gap: 30px;
-    justify-content: center;
-    margin-top: 30px;
 }
 .card-box {
     background: #FFFFFF;
@@ -193,8 +213,56 @@ section.hero-area {
     text-decoration: none;
     color: rgba(224, 44, 109, 0.87);
 }
+/* subscription */
+.subscription-plan {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background: linear-gradient(-45deg , #ee7752, #3375a1, #23a6d5, #0A0826);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    flex-direction: column;
+}
+.subscription-plan h2 {
+    font-family:"Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 60px;
+    color: #ffffff;
+}
 
-
+.subscription-plan p {
+    font-family:"Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+}
+ #subscription input#email {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#subscription button {
+    background-color: #E02C6D;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
 
 
 
@@ -244,3 +312,91 @@ footer .bottom-footer p {
     line-height: 25px;
   
 }
+/* KeyFrame  */
+@keyframes gradient {
+    0% {
+
+        background-position: 0% 50%;
+    }
+    50% {
+
+        background-position: 100% 50%;
+    }
+    100% {
+
+        background-position: 0% 50%;
+    }
+}
+
+
+/*===============================
+            Tab Media Query}
+=================================*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-area {
+        padding: 50px 20px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .hero-img {
+        text-align: end;
+    }
+    .hero-img img {
+        width: 70%;
+    }
+    .grid-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+  }
+
+
+  
+/*===============================
+            Mobile Media Query}
+=================================*/
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .shop {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .hide-menu{
+        display: none;
+    }
+    .hero-area {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+    }
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .group-img {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 20px;
+    }
+    .grid-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+  }
