@@ -109,11 +109,16 @@ header nav h2{
     text-decoration: none;
     padding: 10px 24px;
 }
-.hero-img img {
-    width: 100%;
+.hero-img {
+    background-image: url(./images/cam-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
+.hero-img img {
+    width: 100%;
+}
 
 /* partner area design */
 .group-img {
